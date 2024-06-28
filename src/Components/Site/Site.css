@@ -1,0 +1,56 @@
+.site{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 4%;
+    color: #2C2216;
+    align-items: center;
+}
+.left-site{
+    flex-basis: 60%;
+}
+.right-site{
+    flex-basis: 40%;
+}
+.right-site img{
+    width: 100%;
+}
+.left-site h1{
+    font-size: 3rem;
+}
+.left-site p{
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+.left-site button{
+    margin-top: 40px;
+    border-radius: 10px;
+    background: #2C2216;
+    color: #E8DCAB;
+    padding: 10px 40px;
+    font-size: 1.2rem;
+}
+
+
+
+
+
+@media screen and (max-width:900px) {
+    .site{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .left-site h1{
+        font-size: 2rem;
+    }
+    .left-site p{
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    .left-site button{
+        font-size: 1rem;
+    }
+    
+}

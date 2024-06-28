@@ -1,0 +1,82 @@
+nav{
+    display: flex;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background: #2C2216;
+    color: #8d8479;
+    height: 60px;
+    font-family: "Inter", sans-serif;
+}
+.logo{
+    color:#D0C6AF;
+    font-weight: 500;
+}
+.logo sup{
+    font-size: 12px;
+}
+.navlinks{
+    display: flex;
+    list-style: none;
+}
+.navlink{
+    padding: 12px;
+    cursor: pointer;
+}
+.navlink hr{
+    height: 2px;
+    background: #8D7B42;
+    width: 0;
+}
+.navlink:hover{
+    color: #8D7B42;
+}
+.navlink:hover hr{
+    width: 90%;
+   transition: 0.5s;
+}
+
+.navlink.active{
+    color: #8D7B42;
+}
+.navlink.active hr{
+    width: 90%;
+}
+.nav-btn-contact{
+    background: #EFDEA8;
+    color: #8D7B42;
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 50px;
+}
+.handburger-menu-btn{
+    display: none;
+}
+
+
+@media screen and (max-width:900px) {
+    nav{
+        width: 100%;
+        padding: 10px 20px;
+    }
+    .handburger-menu-btn{
+        display: block;
+    }
+    .navlinks{
+        display: block;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        background:#2C2216;
+        width: 100%;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        list-style: none;
+        transition: 0.5s all;
+    }
+    .navlinks.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        transition: 0.5s all;
+    }
+}
